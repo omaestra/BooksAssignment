@@ -1,0 +1,6 @@
+framework module Pods_BooksAssignment_BooksAssignmentUITests {
+  umbrella header "Pods-BooksAssignment-BooksAssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

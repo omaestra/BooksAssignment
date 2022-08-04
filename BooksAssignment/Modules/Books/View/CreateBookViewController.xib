@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateBookViewController" customModule="BooksAssignment" customModuleProvider="target">
+            <connections>
+                <outlet property="authorTextField" destination="L32-CK-hJ9" id="OfL-BW-egK"/>
+                <outlet property="pagesTextField" destination="7EG-HD-MaW" id="lhi-gZ-YTB"/>
+                <outlet property="priceTextField" destination="WgG-fC-Sga" id="SkX-J1-7fJ"/>
+                <outlet property="ratingSlider" destination="KIc-1U-xAR" id="Zu8-oc-amU"/>
+                <outlet property="ratingValueLabel" destination="FnW-HG-st5" id="Yao-lD-p10"/>
+                <outlet property="releaseYearTextField" destination="Nrr-MU-C3R" id="RYR-LN-ZZ6"/>
+                <outlet property="titleTextField" destination="6mX-AE-bLR" id="zfA-EB-KhB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="3gR-lw-a6l">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIS-iC-dXL">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create new book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHY-Bs-4ib">
+                                    <rect key="frame" x="16" y="32" width="382" height="37"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a simple form to create a new book!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w4-kC-Bw0">
+                                    <rect key="frame" x="16" y="73" width="382" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Pi-1L-b7B">
+                                    <rect key="frame" x="16" y="122" width="382" height="62.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AP-mG-2wA">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title of the book" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6mX-AE-bLR">
+                                            <rect key="frame" x="0.0" y="28.5" width="382" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="name"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0AZ-1t-j3g">
+                                    <rect key="frame" x="16" y="192.5" width="382" height="62.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQT-qh-1wQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Who wrote it?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L32-CK-hJ9">
+                                            <rect key="frame" x="0.0" y="28.5" width="382" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="name"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OtK-y3-y4Y">
+                                    <rect key="frame" x="16" y="263" width="382" height="62.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OhK-YD-qOC">
+                                            <rect key="frame" x="0.0" y="0.0" width="122" height="62.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W3-3d-if2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="122" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WgG-fC-Sga">
+                                                    <rect key="frame" x="0.0" y="28.5" width="122" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mx5-iW-51L">
+                                            <rect key="frame" x="130" y="0.0" width="122" height="62.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqX-FK-ZXy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="122" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How long?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EG-HD-MaW">
+                                                    <rect key="frame" x="0.0" y="28.5" width="122" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EAp-xB-uU5">
+                                            <rect key="frame" x="260" y="0.0" width="122" height="62.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc9-gU-Bwh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="122" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How old?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nrr-MU-C3R">
+                                                    <rect key="frame" x="0.0" y="28.5" width="122" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6u4-hO-wQr">
+                                    <rect key="frame" x="16" y="333.5" width="382" height="83.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGf-QW-xbv">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" minimumValueImage="half_star" maximumValueImage="full_star" translatesAutoresizingMaskIntoConstraints="NO" id="KIc-1U-xAR">
+                                            <rect key="frame" x="-2" y="28.5" width="386" height="31"/>
+                                            <connections>
+                                                <action selector="ratingSliderValueChanged:" destination="-1" eventType="valueChanged" id="gvs-be-9eh"/>
+                                            </connections>
+                                        </slider>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnW-HG-st5">
+                                            <rect key="frame" x="0.0" y="66.5" width="382" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d6-lB-dbh">
+                                    <rect key="frame" x="16" y="820" width="382" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="Ono-uR-WgN"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Create"/>
+                                    <connections>
+                                        <action selector="createButtonTapped:" destination="-1" eventType="touchUpInside" id="BWE-aG-JHg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="OtK-y3-y4Y" firstAttribute="leading" secondItem="SIS-iC-dXL" secondAttribute="leading" constant="16" id="2qE-XU-eqv"/>
+                                <constraint firstItem="7d6-lB-dbh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6u4-hO-wQr" secondAttribute="bottom" constant="32" id="4z4-Lv-JUP"/>
+                                <constraint firstAttribute="trailing" secondItem="RHY-Bs-4ib" secondAttribute="trailing" constant="16" id="5Pk-Xp-YFz"/>
+                                <constraint firstItem="6Pi-1L-b7B" firstAttribute="leading" secondItem="SIS-iC-dXL" secondAttribute="leading" constant="16" id="7ag-UG-Yhf"/>
+                                <constraint firstAttribute="trailing" secondItem="2w4-kC-Bw0" secondAttribute="trailing" constant="16" id="ArQ-xM-bji"/>
+                                <constraint firstItem="6u4-hO-wQr" firstAttribute="top" secondItem="OtK-y3-y4Y" secondAttribute="bottom" constant="8" id="D4Z-fG-Za4"/>
+                                <constraint firstItem="OtK-y3-y4Y" firstAttribute="top" secondItem="0AZ-1t-j3g" secondAttribute="bottom" constant="8" id="Ddb-XR-rrb"/>
+                                <constraint firstItem="2w4-kC-Bw0" firstAttribute="leading" secondItem="SIS-iC-dXL" secondAttribute="leading" constant="16" id="JMs-PQ-Cib"/>
+                                <constraint firstItem="2w4-kC-Bw0" firstAttribute="top" secondItem="RHY-Bs-4ib" secondAttribute="bottom" constant="4" id="LOa-x0-eri"/>
+                                <constraint firstItem="RHY-Bs-4ib" firstAttribute="leading" secondItem="SIS-iC-dXL" secondAttribute="leading" constant="16" id="QXJ-Es-iav"/>
+                                <constraint firstAttribute="trailing" secondItem="6Pi-1L-b7B" secondAttribute="trailing" constant="16" id="RaR-SS-EIW"/>
+                                <constraint firstAttribute="trailing" secondItem="0AZ-1t-j3g" secondAttribute="trailing" constant="16" id="S7k-WL-IWd"/>
+                                <constraint firstItem="RHY-Bs-4ib" firstAttribute="top" secondItem="SIS-iC-dXL" secondAttribute="top" constant="32" id="TBB-ki-7gI"/>
+                                <constraint firstItem="0AZ-1t-j3g" firstAttribute="top" secondItem="6Pi-1L-b7B" secondAttribute="bottom" constant="8" id="awr-Ry-7vz"/>
+                                <constraint firstAttribute="trailing" secondItem="OtK-y3-y4Y" secondAttribute="trailing" constant="16" id="cWm-ra-JKB"/>
+                                <constraint firstItem="6u4-hO-wQr" firstAttribute="leading" secondItem="SIS-iC-dXL" secondAttribute="leading" constant="16" id="d9h-MY-XI0"/>
+                                <constraint firstAttribute="trailing" secondItem="7d6-lB-dbh" secondAttribute="trailing" constant="16" id="hH8-yZ-DtS"/>
+                                <constraint firstAttribute="trailing" secondItem="6u4-hO-wQr" secondAttribute="trailing" constant="16" id="khC-Ll-Yp5"/>
+                                <constraint firstItem="0AZ-1t-j3g" firstAttribute="leading" secondItem="SIS-iC-dXL" secondAttribute="leading" constant="16" id="mVS-KS-qaT"/>
+                                <constraint firstItem="6Pi-1L-b7B" firstAttribute="top" secondItem="2w4-kC-Bw0" secondAttribute="bottom" constant="32" id="pWV-SA-xVi"/>
+                                <constraint firstItem="7d6-lB-dbh" firstAttribute="leading" secondItem="SIS-iC-dXL" secondAttribute="leading" constant="16" id="r5c-AC-xiQ"/>
+                                <constraint firstAttribute="bottom" secondItem="7d6-lB-dbh" secondAttribute="bottom" priority="999" constant="32" id="xvI-P0-ygd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="SIS-iC-dXL" firstAttribute="top" secondItem="3gR-lw-a6l" secondAttribute="top" id="E0e-dQ-ysL"/>
+                        <constraint firstItem="SIS-iC-dXL" firstAttribute="leading" secondItem="3gR-lw-a6l" secondAttribute="leading" id="XOW-ri-wJU"/>
+                        <constraint firstAttribute="trailing" secondItem="SIS-iC-dXL" secondAttribute="trailing" id="cfK-8B-ogB"/>
+                        <constraint firstAttribute="bottom" secondItem="SIS-iC-dXL" secondAttribute="bottom" priority="999" id="xGc-9m-hEp"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3gR-lw-a6l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7DH-XW-mlm"/>
+                <constraint firstAttribute="bottom" secondItem="3gR-lw-a6l" secondAttribute="bottom" id="CVM-DB-fCW"/>
+                <constraint firstItem="SIS-iC-dXL" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="999" id="Te9-sI-vKu"/>
+                <constraint firstItem="3gR-lw-a6l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lVU-SF-yO5"/>
+                <constraint firstAttribute="trailing" secondItem="3gR-lw-a6l" secondAttribute="trailing" id="laN-uj-S6a"/>
+                <constraint firstItem="SIS-iC-dXL" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="vWs-3S-1hp"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="full_star" width="24" height="24"/>
+        <image name="half_star" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

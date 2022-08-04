@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "link": "/api/v1/items/1",
+    "author": "Jonas Eika",
+    "title": "After the Sun"
+  },
+  {
+    "id": 2,
+    "link": "/api/v1/items/2",
+    "author": "Haruki Murakami",
+    "title": "Kafka on the Shore"
+  },
+  {
+    "id": 3,
+    "link": "/api/v1/items/3",
+    "author": "Haruki Murakami",
+    "title": "After Dark"
+  },
+  {
+    "id": 4,
+    "link": "/api/v1/items/4",
+    "author": "Haruki Murakami",
+    "title": "1Q84"
+  }
+]

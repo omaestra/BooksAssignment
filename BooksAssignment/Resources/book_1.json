@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "link": "/api/v1/items/1",
+  "author": "Jonas Eika",
+  "title": "After the Sun",
+  "image": "https://s26162.pcdn.co/wp-content/uploads/2021/11/81awmLv4S4S-978x1536.jpg",
+  "pages": 296,
+  "releaseDate": "1987",
+  "rating": 4.7,
+  "price": 19.99,
+  "description": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."
+}
